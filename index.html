@@ -4,6 +4,18 @@
 		<title>tes twebsit!????!!1111</title>
 	</head>
 	<body>
-		<span style="color: blue; cursor: pointer;" id="hi">hi</span>
+		<script>
+			var create_txt = function(txt, font, size, color, bold=false, br_a ,br_b=false){
+				var x = document.createElement("p");
+				x.innerHTML = txt;
+				x.style.fontFamily = "font";
+				x.style.fontSize = (size+"px");
+				x.style.color = color;
+				if(bold===false){}else if(bold===true){x.style.fontWeight="bold";};
+				if(br_b===false){}else if(br_b===true){var hi=document.createElement("br");document.body.appendChild(hi);}
+				document.body.appendChild(x);
+				if(br_a===false){}else if(br_a===true){var hi=document.createElement("br");document.body.appendChild(hi);}
+			};
+		</script>
 	</body>
 </html>
