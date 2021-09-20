@@ -8,7 +8,7 @@
 			var create_txt = function(txt, font, size, color, bold=false, br_a ,br_b=false){
 				var x = document.createElement("p");
 				x.innerHTML = txt;
-				x.style.fontFamily = "font";
+				x.style.fontFamily = font;
 				x.style.fontSize = (size+"px");
 				x.style.color = color;
 				if(bold===false){}else if(bold===true){x.style.fontWeight="bold";};
