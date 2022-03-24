@@ -13,7 +13,7 @@
              </form>
         </div>
 		<script>
-			var ws_uri = "ws://["+document.URL+"]:9600";
+			var ws_uri = "ws://['https://1zwy.github.io/testpage/']:9600";
             var websocket = new WebSocket(ws_uri);
 
             // on websocket open:
@@ -75,7 +75,7 @@
 	            chat_messages.insertAdjacentHTML("beforeend", message);
 	            chat_messages.scrollTop = chat_messages.scrollHeight;
             }
-
+            Username();
 		</script>
 	</body>
 </html>
